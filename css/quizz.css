@@ -28,7 +28,15 @@
 }
 
 
-.content .buttons{
-    background-image: url(/Media/playbutton.png);
-    background-size: cover;
+.content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 3px;
+    color: white;
+    stroke: blue;
+    stroke-width: 10px;
 }
