@@ -10,30 +10,35 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/Media/quiz-logo-in-comic-style-brainy-game-vector-36246215-removebg-preview.png" alt="Bootstrap" width="60" height="50">
-          </a>
-          
-        </div>
-      </nav>
-    <div class="back">
-        <div class="back1">
-            <div class="content">
-                <div class="step-number">
-                    <span>Questions</span><span id="Question_Num">1</span><span>/16</span>
-                </div>
-                <h1>Question</h1>
-                <div class="quiz">vegezz vezzzz gezzzzzeeeeeeeeeeeeeee1</div>
-                <div class="quiz">1</div>
-                <div class="quiz">1</div>
-                <div class="quiz">1</div>
+    <body>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="/Media/quiz-logo-in-comic-style-brainy-game-vector-36246215-removebg-preview.png" alt="Bootstrap" width="60" height="50">
+              </a>
             </div>
-            
+        </nav>
+          
+        <div class="back">
+            <div class="back1">
+                <div class="content">
+                    <div id="timer" class="timer">30:00<i class="fas fa-stopwatch timer-icon"></i></div>
+                    <div class="progress">
+                        <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 6.25%;" aria-valuenow="6.25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="step-number">
+                        <span>Question:</span><span id="question-count">1/16</span>
+                    </div>                
+                    <h1>Questivevevevevevon</h1>
+                    <div class="quiz">vegezz vezzzz gezzzzzeeeeeeeeeeeeeee1</div>
+                    <div class="quiz">1</div>
+                    <div class="quiz">1</div>
+                    <div class="quiz">1</div>
+                    <button id="Button_Next" class="quiz">Next</button>
+                </div>
+            </div>
         </div>
-    </div>
-    
+       
     <script src="quizz.js"></script>
 </body>
 </html>
