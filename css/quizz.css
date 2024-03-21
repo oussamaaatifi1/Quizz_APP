@@ -87,3 +87,11 @@
 .answered {
     border: 3px solid green !important;
 }
+
+.timer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: wheat;
+    min-width: 20px;
+}
