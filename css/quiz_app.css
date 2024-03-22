@@ -5,6 +5,11 @@
     align-items:flex-end;
 }
 
+.btnn {
+    display: flex;
+    justify-content: center;
+}
+
 .back {
     display: flex;
     justify-content: center;
