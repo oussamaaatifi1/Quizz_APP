@@ -3,7 +3,7 @@
 
 * {
     font-family: "Jost", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
 
 }
@@ -21,9 +21,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
-  }
-  
-  .back1 {
+}
+
+.back1 {
     background-image: url(/Media/back.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,10 +36,6 @@
     stroke: black;
 }
 
-/* .content {
-        animation: bounceleft 0.6s forwards linear;
-        opacity: 0;
-} */
 .content .quiz {
     display: flex;
     justify-content: center;
@@ -54,11 +50,12 @@
     height: 70px;
 }
 
-.content h1 {
+h1 {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 40px;
 }
 
 .step-number {
@@ -70,22 +67,13 @@
     font-weight: bold;
 }
 
-
 .quiz {
     cursor: pointer;
-    position: relative; /* Needed for absolute positioning of icon */
+    position: relative;
 }
 
-.verified-icon {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    color: green;
-    display: none; /* Initially hidden */
-}
-
-.answered {
-    border: 3px solid green !important;
+.quiz:hover {
+        background-color: lightgreen;
 }
 
 .timer {
@@ -94,4 +82,34 @@
     align-items: center;
     color: wheat;
     min-width: 20px;
+}
+
+
+@media (max-width : 480px){
+    .content .quiz {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 97%;
+    }
+    .timer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: wheat;
+        margin-right: 40px;
+    }
+    .progress {
+        height: 10px;
+        margin-bottom: 10px;
+    }
+    .content h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 30px;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 5px;
+
+    }
 }
