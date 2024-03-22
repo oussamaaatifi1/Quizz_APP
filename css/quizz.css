@@ -3,15 +3,15 @@
 
 * {
     font-family: "Jost", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
 
 }
 
 .container .navbar-brand {
     display: flex;
-    justify-content: center;
-    align-items:flex-end;
+    justify-content: space-evenly;
+    
 }
 
 .back {
@@ -21,9 +21,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
-}
-
-.back1 {
+  }
+  
+  .back1 {
     background-image: url(/Media/back.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,6 +35,11 @@
     border-radius: 15px;
     stroke: black;
 }
+
+/* .content {
+        animation: bounceleft 0.6s forwards linear;
+        opacity: 0;
+} */
 
 .content .quiz {
     display: flex;
@@ -50,12 +55,11 @@
     height: 70px;
 }
 
-h1 {
+.content .que_text {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
 }
 
 .step-number {
@@ -67,26 +71,46 @@ h1 {
     font-weight: bold;
 }
 
-.quiz {
+
+.liste_option {
     cursor: pointer;
-    position: relative;
+    position: relative; /* Needed for absolute positioning of icon */
 }
 
-.quiz:hover {
-        background-color: lightgreen;
+.verified-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: green;
+    display: none; /* Initially hidden */
 }
 
-.timer {
+.answered {
+    border: 3px solid green !important;
+}
+.next{
+    display: flex;
+    border: none;
+    background-color: aqua;
+    border-radius: 6px;
+    justify-content: flex-end;
+}
+
+
+.content button {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    color: wheat;
-    min-width: 20px;
 }
-
-
+.step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
 @media (max-width : 480px){
-    .content .quiz {
+    .content .option {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -106,10 +130,21 @@ h1 {
     .content h1 {
         color: white;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 30px; /* Adjust font size for screens with a maximum width of 480px */
         margin: 10px;
         border-radius: 5px;
         padding: 5px;
 
     }
+}
+
+.timer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: wheat;
+    min-width: 20px;
+}
+.option:hover {
+    background-color: lightgreen;
 }
