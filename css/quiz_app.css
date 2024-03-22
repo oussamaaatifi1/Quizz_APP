@@ -1,8 +1,14 @@
 
 .container .navbar-brand {
     display: flex;
-    justify-content: center;
-    align-items:flex-end;
+    align-items: center;
+    justify-items: center;
+    height: 50px;
+}
+#hi{
+    width: 80px;
+    height: 100px;
+
 }
 
 .btnn {
